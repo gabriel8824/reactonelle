@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/logo.png" alt="Reactonelle Logo" width="120" />
+  <img src="https://www.reactonelle.dev/logo.svg" alt="Reactonelle Logo" width="120" />
 </p>
 
 <h1 align="center">⚡ Reactonelle</h1>
