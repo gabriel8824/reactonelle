@@ -1,18 +1,18 @@
 {
-    "type": "lottie",
+    "type": "static",
     "backgroundColor": "#0F172A",
     "logo": {
-        "src": "splash_logo.png",
+        "src": "",
         "width": 150,
         "height": 150,
-        "animation": "fade-scale"
+        "animation": "none"
     },
     "lottie": {
-        "src": "splash_animation.json",
+        "src": "",
         "width": 300,
         "height": 300,
         "loop": false,
-        "autoPlay": true
+        "autoPlay": false
     },
     "text": {
         "content": "",
@@ -20,7 +20,7 @@
         "fontSize": 16,
         "animation": "none"
     },
-    "duration": 3000,
+    "duration": 500,
     "transition": "fade",
-    "autoHide": false
+    "autoHide": true
 }
