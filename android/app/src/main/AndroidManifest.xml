@@ -37,6 +37,7 @@
     
     <!-- Permitir tráfego HTTP em debug (localhost) -->
     <application
+        android:name=".ReactonelleApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -46,16 +47,24 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="34">
         
+        <!-- Splash Screen - Activity inicial -->
         <activity
-            android:name=".MainActivity"
+            android:name=".splash.SplashActivity"
             android:exported="true"
-            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
-            android:windowSoftInputMode="adjustResize"
-            android:theme="@style/Theme.Reactonelle">
+            android:theme="@style/Theme.Reactonelle.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        
+        <!-- MainActivity - WebView principal -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.Reactonelle">
         </activity>
         
         <!-- FileProvider para câmera -->

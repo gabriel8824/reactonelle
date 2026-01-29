@@ -105,7 +105,22 @@ class ReactonelleBridge(
         
         // Contatos
         "contacts.pick" to ContactsPickHandler(),
-        "contacts.getAll" to ContactsGetAllHandler()
+        "contacts.getAll" to ContactsGetAllHandler(),
+        
+        // OneSignal Push Notifications
+        "onesignal.login" to OneSignalLoginHandler(),
+        "onesignal.logout" to OneSignalLogoutHandler(),
+        "onesignal.setTag" to OneSignalSetTagHandler(),
+        "onesignal.setTags" to OneSignalSetTagsHandler(),
+        "onesignal.deleteTag" to OneSignalDeleteTagHandler(),
+        "onesignal.getTags" to OneSignalGetTagsHandler(),
+        "onesignal.requestPermission" to OneSignalRequestPermissionHandler(),
+        "onesignal.getPermissionStatus" to OneSignalGetPermissionStatusHandler(),
+        "onesignal.getSubscriptionId" to OneSignalGetSubscriptionIdHandler(),
+        "onesignal.optIn" to OneSignalOptInHandler(),
+        "onesignal.optOut" to OneSignalOptOutHandler(),
+        "onesignal.addEmail" to OneSignalAddEmailHandler(),
+        "onesignal.removeEmail" to OneSignalRemoveEmailHandler()
     )
 
     /**

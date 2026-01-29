@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
     private fun loadContent() {
         // Usa URL customizada se definida no ReactonelleDebug
         currentUrl = ReactonelleDebug.devServerUrl ?: if (BuildConfig.USE_LOCAL_SERVER) {
-            "https://bridge-playground.lovable.app"
+            "https://reactonelle.lovable.app/"
         } else {
             "file:///android_asset/www/index.html"
         }

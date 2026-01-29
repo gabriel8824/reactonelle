@@ -1,0 +1,26 @@
+{
+    "type": "lottie",
+    "backgroundColor": "#0F172A",
+    "logo": {
+        "src": "splash_logo.png",
+        "width": 150,
+        "height": 150,
+        "animation": "fade-scale"
+    },
+    "lottie": {
+        "src": "splash_animation.json",
+        "width": 300,
+        "height": 300,
+        "loop": false,
+        "autoPlay": true
+    },
+    "text": {
+        "content": "",
+        "color": "#FFFFFF",
+        "fontSize": 16,
+        "animation": "none"
+    },
+    "duration": 3000,
+    "transition": "fade",
+    "autoHide": false
+}

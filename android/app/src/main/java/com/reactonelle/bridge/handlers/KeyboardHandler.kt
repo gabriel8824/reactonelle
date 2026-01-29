@@ -67,7 +67,7 @@ class KeyboardShowHandler : BridgeHandler {
 
 /**
  * Handler para esconder splash screen
- * Nota: Implementação depende de como splash é configurada
+ * Comunica com SplashManager para esconder a splash animada
  */
 class SplashHideHandler : BridgeHandler {
     override fun handle(
@@ -76,16 +76,10 @@ class SplashHideHandler : BridgeHandler {
         onSuccess: (JSONObject?) -> Unit,
         onError: (String) -> Unit
     ) {
-        if (context !is Activity) {
-            onError("Context must be an Activity")
-            return
-        }
-        
         Handler(Looper.getMainLooper()).post {
             try {
-                // Para Android 12+ com SplashScreen API
-                // A splash é removida automaticamente, este handler é para compatibilidade
-                // Se você estiver usando uma splash customizada, adicione lógica aqui
+                // Usa SplashManager para comunicar com SplashActivity
+                com.reactonelle.splash.SplashManager.hide()
                 onSuccess(null)
             } catch (e: Exception) {
                 onError(e.message ?: "Failed to hide splash")

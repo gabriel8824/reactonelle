@@ -76,4 +76,10 @@ dependencies {
     // QR Code (ZXing)
     implementation("com.google.zxing:core:3.5.2")
     implementation("com.journeyapps:zxing-android-embedded:4.3.0")
+    
+    // Lottie para animações da Splash Screen
+    implementation("com.airbnb.android:lottie:6.3.0")
+    
+    // OneSignal Push Notifications
+    implementation("com.onesignal:OneSignal:[5.1.0, 5.1.99]")
 }

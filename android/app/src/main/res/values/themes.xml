@@ -13,4 +13,13 @@
         <item name="android:windowBackground">#0F172A</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
+    
+    <!-- Tema para Splash Screen - fullscreen sem barras de sistema -->
+    <style name="Theme.Reactonelle.Splash" parent="Theme.Reactonelle">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">#0F172A</item>
+    </style>
 </resources>
+
